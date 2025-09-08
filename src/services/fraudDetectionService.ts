@@ -4,8 +4,8 @@ type FraudDetectionAction = any; // Import from context if needed
 
 class FraudDetectionService {
   private dispatch: React.Dispatch<FraudDetectionAction> | null = null;
-  private intervalId: NodeJS.Timeout | null = null;
-  private agentIntervals: NodeJS.Timeout[] = [];
+  private intervalId: number | null = null;
+  private agentIntervals: number[] = [];
 
   initialize(dispatch: React.Dispatch<FraudDetectionAction>) {
     this.dispatch = dispatch;
