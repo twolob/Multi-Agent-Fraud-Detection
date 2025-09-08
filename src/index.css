@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200 p-6;
+  }
+  
+  .metric-card {
+    @apply card hover:shadow-md transition-shadow duration-200;
+  }
+  
+  .agent-status {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  
+  .agent-active {
+    @apply agent-status bg-green-100 text-green-800;
+  }
+  
+  .agent-processing {
+    @apply agent-status bg-yellow-100 text-yellow-800;
+  }
+  
+  .agent-idle {
+    @apply agent-status bg-gray-100 text-gray-800;
+  }
+  
+  .fraud-high {
+    @apply bg-red-50 border-red-200 text-red-900;
+  }
+  
+  .fraud-medium {
+    @apply bg-yellow-50 border-yellow-200 text-yellow-900;
+  }
+  
+  .fraud-low {
+    @apply bg-green-50 border-green-200 text-green-900;
+  }
+}

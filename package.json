@@ -1,12 +1,7 @@
-{
-  "name": "project",
-  "version": "1.0.0",
-  "description": "This project is focus on building a Financial Fraud Detection system using Agentic AI.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
-}
+@@ .. @@
+   "scripts": {
++    "dev": "vite",
++    "build": "tsc && vite build",
++    "preview": "vite preview",
+     "test": "echo \"Error: no test specified\" && exit 1"
+   },
